@@ -97,14 +97,20 @@ module.exports = function ( grunt ) {
       build: {
         options: {
           port: 9000,
-          base: '<%= build_dir %>'
+          base: '<%= build_dir %>',
+          open: {
+            appName: 'Google Chrome'
+          }
         }
       },
       compile: {
         options: {
           port: 9000,
           base: '<%= compile_dir %>',
-          keepalive: true
+          keepalive: true,
+          open: {
+            appName: 'Google Chrome'
+          }
         }
       }
     },
