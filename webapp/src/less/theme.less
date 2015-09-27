@@ -58,7 +58,9 @@
 
 table,
 .table {
-  color: #fff;
+  color: @text-color;
+  border-top: 2px solid @brand-primary;
+  border-bottom: 2px solid @brand-primary;
 
   a:not(.btn) {
     color: #fff;
@@ -71,6 +73,83 @@ table,
 
   .text-muted {
     color: @text-muted;
+  }
+
+  thead > tr > th {
+    color: darken(@link-color, 10%);
+    background-color: @gray-base;
+  }
+
+  thead > tr > td.info,
+  tbody > tr > td.info,
+  tfoot > tr > td.info,
+  thead > tr > th.info,
+  tbody > tr > th.info,
+  tfoot > tr > th.info,
+  thead > tr.info > td,
+  tbody > tr.info > td,
+  tfoot > tr.info > td,
+  thead > tr.info > th,
+  tbody > tr.info > th,
+  tfoot > tr.info > th{
+    color: #000;
+    font-weight: bold;
+    border-top: 1px solid @brand-info;
+    border-bottom: 1px solid @brand-info;
+  }
+
+  thead > tr > td.success,
+  tbody > tr > td.success,
+  tfoot > tr > td.success,
+  thead > tr > th.success,
+  tbody > tr > th.success,
+  tfoot > tr > th.success,
+  thead > tr.success > td,
+  tbody > tr.success > td,
+  tfoot > tr.success > td,
+  thead > tr.success > th,
+  tbody > tr.success > th,
+  tfoot > tr.success > th{
+    color: #000;
+    font-weight: bold;
+    border-top: 1px solid @brand-success;
+    border-bottom: 1px solid @brand-success;
+  }
+
+  thead > tr > td.warning,
+  tbody > tr > td.warning,
+  tfoot > tr > td.warning,
+  thead > tr > th.warning,
+  tbody > tr > th.warning,
+  tfoot > tr > th.warning,
+  thead > tr.warning > td,
+  tbody > tr.warning > td,
+  tfoot > tr.warning > td,
+  thead > tr.warning > th,
+  tbody > tr.warning > th,
+  tfoot > tr.warning > th{
+    color: #000;
+    font-weight: bold;
+    border-top: 1px solid @brand-warning;
+    border-bottom: 1px solid @brand-warning;
+  }
+
+  thead > tr > td.danger,
+  tbody > tr > td.danger,
+  tfoot > tr > td.danger,
+  thead > tr > th.danger,
+  tbody > tr > th.danger,
+  tfoot > tr > th.danger,
+  thead > tr.danger > td,
+  tbody > tr.danger > td,
+  tfoot > tr.danger > td,
+  thead > tr.danger > th,
+  tbody > tr.danger > th,
+  tfoot > tr.danger > th{
+    color: #000;
+    font-weight: bold;
+    border-top: 1px solid @brand-danger;
+    border-bottom: 1px solid @brand-danger;
   }
 }
 
