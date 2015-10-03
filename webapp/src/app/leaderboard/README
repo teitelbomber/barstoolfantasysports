@@ -1,0 +1,8 @@
+Quick and dirty leaderboard demo.
+
+For now, as it is fictional data anyway, we'll just go straight to it without
+attaching it to a contest.
+
+Eventually we should move this (or redo this) as part of a given contest,
+navigable from the contest home and from a list of leaderboards relevant
+to the user.
