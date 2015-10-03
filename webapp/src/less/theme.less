@@ -80,6 +80,25 @@ table,
     background-color: @gray-base;
   }
 
+  thead > tr > td.primary,
+  tbody > tr > td.primary,
+  tfoot > tr > td.primary,
+  thead > tr > th.primary,
+  tbody > tr > th.primary,
+  tfoot > tr > th.primary,
+  thead > tr.primary > td,
+  tbody > tr.primary > td,
+  tfoot > tr.primary > td,
+  thead > tr.primary > th,
+  tbody > tr.primary > th,
+  tfoot > tr.primary > th{
+    color: #000;
+    background-color: darken(@brand-primary, 15%);
+    font-weight: bold;
+    border-top: 1px solid @brand-primary;
+    border-bottom: 1px solid @brand-primary;
+  }
+
   thead > tr > td.info,
   tbody > tr > td.info,
   tfoot > tr > td.info,

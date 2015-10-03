@@ -1,0 +1,50 @@
+/**
+ * Footer
+ */
+
+.footer {
+  margin-top: 80px;
+
+  .footer-inner {
+    border-top: 2px solid @brand-primary;
+  }
+
+  .copyright {
+    .small;
+    .pull-right;
+  }
+
+  .social {
+    float: right;
+    margin: 0;
+    list-style: none;
+
+    li {
+      float: left;
+      margin-left: 20px;
+
+      a, a:visited {
+        color: @gray-light;
+        text-decoration: none;
+        font-size: 40px;
+        .transition( 250ms ease-in-out );
+
+        &:hover {
+          color: @gray;
+        }
+      }
+    }
+  }
+  .list-group{
+    margin-top: 18px;
+    .list-group-item{
+      background-color: @gray-base;
+      border: 0px;
+      padding-bottom: 0px;
+    }
+
+  }
+  a{
+    color: @text-color;
+  }
+}
