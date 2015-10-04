@@ -11,7 +11,8 @@
 
   .copyright {
     .small;
-    .pull-right;
+
+    margin-top: 5px;
   }
 
   .social {
@@ -36,11 +37,19 @@
     }
   }
   .list-group{
-    margin-top: 18px;
+    .row;
+    margin-top: 15px;
+    padding-left: 45px;
+
     .list-group-item{
+      .make-xs-column(6);
+      .make-sm-column(4);
       background-color: @gray-base;
       border: 0px;
       padding-bottom: 0px;
+      padding-top: 0px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
   }
