@@ -1,4 +1,4 @@
-angular.module( 'ngBoilerplate', [
+angular.module( 'barstoolFantasySports', [
   'templates-app',
   'templates-common',
   'ngBoilerplate.home',
@@ -8,7 +8,7 @@ angular.module( 'ngBoilerplate', [
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
-  $urlRouterProvider.otherwise( '/home' );
+  $urlRouterProvider.otherwise( '/leaderboard' );
 
   $stateProvider.state( 'ngBoilerplate', {
     abstract: true,
