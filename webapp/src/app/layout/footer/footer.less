@@ -11,8 +11,9 @@
 
   .copyright {
     .small;
-
-    margin-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 1px;
+    margin-top: -19px;
   }
 
   .social {
@@ -39,17 +40,15 @@
   .list-group{
     .row;
     margin-top: 15px;
-    padding-left: 45px;
 
     .list-group-item{
       .make-xs-column(6);
-      .make-sm-column(4);
+      .make-sm-column-offset(1);
+      .make-sm-column(3);
       background-color: @gray-base;
       border: 0px;
       padding-bottom: 0px;
       padding-top: 0px;
-      padding-left: 20px;
-      padding-right: 20px;
     }
 
   }
